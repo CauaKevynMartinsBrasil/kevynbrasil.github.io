@@ -360,3 +360,18 @@ button.button{cursor:pointer}
 @media(max-width:980px){.site-header nav{overflow:visible}.nav-list{min-width:0;flex-wrap:wrap}.nav-list a{padding:7px 11px}}
 @media(max-width:700px){.project-feature{grid-template-columns:1fr;padding:22px;gap:20px}.project-list-two{grid-template-columns:1fr}.project-fact{padding:20px}.project-fact strong{font-size:34px;margin:8px 0}.gaming-note{flex-direction:column;align-items:start;gap:12px}.section-nav{gap:10px 15px}.section-nav>span{width:100%}.interest-group{margin-bottom:26px}}
 @media print{.section-nav{display:none}.resume-contact{font-size:9pt;color:black}}
+
+/* Give the individual contribution a complete row rather than an empty half-column. */
+.bergecco-case .my-contribution{grid-column:1/-1;background:#fff8fa;border:1px solid #f0d8df;border-radius:10px;padding:24px;margin:0}
+.bergecco-case .contribution-lead{max-width:95ch;color:var(--ink);font-size:15px}
+.contribution-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:24px}
+.contribution-grid article{min-width:0}
+.contribution-number{font-size:12px;font-weight:700;color:var(--red)}
+.contribution-grid h3{font-size:20px;line-height:1.25;margin:10px 0}
+.bergecco-case .work-example{font-size:12px;border-top:1px solid #ead9df;padding-top:12px}
+.contribution-outcome{border-top:1px solid #ead9df;padding-top:16px;margin-top:22px}
+.contribution-outcome strong{font-size:15px;color:var(--red)}
+.contribution-outcome p{margin:5px 0 0}
+.bergecco-case .contribution-credit{font-size:11px;margin-top:16px;color:var(--muted)}
+.contribution-credit a{color:var(--red);text-underline-offset:3px}
+@media(max-width:800px){.contribution-grid{grid-template-columns:1fr;gap:20px}.contribution-grid article+article{border-top:1px solid #ead9df;padding-top:18px}.bergecco-case .my-contribution{padding:18px}.bergecco-case .work-example{border-top:0;padding-top:0}}
