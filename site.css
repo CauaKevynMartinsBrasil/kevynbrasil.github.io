@@ -332,3 +332,6 @@ button.button{cursor:pointer}
  body{background:#fff;color:#000;font-size:10pt}.site-header,.topline,.site-footer,.skip-link,.page-intro .button-row{display:none!important}.site-content{margin:0}.wrap{width:100%;max-width:none}.page-intro{padding:0 0 12px}.page-intro:before{display:none}.page-intro h1{font-size:26pt;margin-bottom:6px}.page-intro .eyebrow{font-size:12pt;color:#000}.page-intro .lead{font-size:10pt}
  .resume-block{grid-template-columns:95px 1fr;padding:12px 0;border:0;border-top:1px solid #bbb;border-radius:0;margin:0;gap:15px;break-inside:avoid}.resume-block h2{font-size:12pt;color:#000}.resume-item h3{font-size:10pt}.resume-item p,.resume-bullets{font-size:9pt;color:#000;line-height:1.4}.resume-item .date{font-size:8pt;color:#333}.resume-item+.resume-item{padding-top:10px;margin-top:10px}.resume-item a{text-decoration:none;color:#000}
 }
+
+.evidence-strip-three{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:700px){.evidence-strip-three{grid-template-columns:1fr}.evidence-strip-three>div{border-right:0;border-bottom:1px solid var(--line)}.evidence-strip-three>div:last-child{border-bottom:0}}
