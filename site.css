@@ -375,3 +375,28 @@ button.button{cursor:pointer}
 .bergecco-case .contribution-credit{font-size:11px;margin-top:16px;color:var(--muted)}
 .contribution-credit a{color:var(--red);text-underline-offset:3px}
 @media(max-width:800px){.contribution-grid{grid-template-columns:1fr;gap:20px}.contribution-grid article+article{border-top:1px solid #ead9df;padding-top:18px}.bergecco-case .my-contribution{padding:18px}.bergecco-case .work-example{border-top:0;padding-top:0}}
+
+/* Compact project flow: no shared grid rows forcing empty space below short sections. */
+.project-detail{max-width:1600px;width:calc(100% - 48px)}
+.project-detail .page-intro{padding-bottom:18px}
+.project-detail .page-intro h1{margin-bottom:12px}
+.project-detail .section-nav{margin-top:16px;padding-top:10px;gap:6px 14px}
+.project-detail .info-card{padding:16px 20px}
+.project-detail .info-card h3{font-size:22px;margin-bottom:8px}
+.bergecco-case{gap:12px;padding-bottom:18px}
+.bergecco-case>div{display:block;padding:22px}
+.bergecco-case section+section{margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
+.bergecco-case h2{font-size:24px;margin-bottom:10px}
+.bergecco-case p{margin-bottom:12px}
+.bergecco-case section>p:last-child{margin-bottom:0}
+.bergecco-case .my-contribution{padding:20px;margin:0}
+.bergecco-case .contribution-lead{max-width:none}
+.bergecco-case .contribution-grid{margin-top:16px;gap:20px}
+.bergecco-case .contribution-outcome{margin-top:16px;padding-top:12px}
+.bergecco-case .contribution-credit{margin-top:12px}
+.bergecco-case .case-aside{padding:18px 22px}
+.event-concepts ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;padding:0;margin-bottom:12px}
+.event-concepts li{padding:14px 16px;background:var(--paper);border-radius:6px}
+.event-concepts li strong{display:block;color:var(--ink);margin-bottom:5px}
+@media(min-width:1700px){.project-detail{width:calc(100% - 72px)}}
+@media(max-width:700px){.project-detail{width:calc(100% - 32px)}.bergecco-case>div{padding:16px}.event-concepts ul{grid-template-columns:1fr}.bergecco-case .my-contribution{padding:16px}.project-detail .info-card{padding:16px}}
