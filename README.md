@@ -1,6 +1,6 @@
 # Caua Kevyn Martins Brasil — Portfolio
 
-A responsive, multi-page finance portfolio with dedicated About, Projects, Experience, Résumé, and Contact pages, plus three detailed work stories. The site uses plain HTML and CSS and has no external dependencies.
+A responsive, multi-page finance portfolio with dedicated About, Projects, Experience, Highlights, Résumé, and Contact pages, plus three detailed work stories. The site uses plain HTML and CSS and has no external dependencies.
 
 ## Publish on GitHub Pages
 
