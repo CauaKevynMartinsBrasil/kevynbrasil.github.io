@@ -335,3 +335,28 @@ button.button{cursor:pointer}
 
 .evidence-strip-three{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:700px){.evidence-strip-three{grid-template-columns:1fr}.evidence-strip-three>div{border-right:0;border-bottom:1px solid var(--line)}.evidence-strip-three>div:last-child{border-bottom:0}}
+
+/* Page navigation and distinct layouts for work, interests, and contact. */
+.section-nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;border-top:1px solid var(--line);margin-top:22px;padding-top:14px}
+.section-nav>span{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-right:6px}
+.section-nav a{font-size:12px;color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+.section-nav a:hover{color:var(--red);border-color:var(--red)}
+.project-feature{display:grid;grid-template-columns:1.45fr .7fr;gap:30px;align-items:stretch;background:white;border:1px solid var(--line);border-radius:12px;padding:28px}
+.project-feature h2{font-size:30px}.project-feature p{color:var(--muted);font-size:14px;max-width:65ch}
+.project-feature .button{margin-top:22px}.project-feature .chip-list{margin-top:14px}
+.project-fact{display:flex;flex-direction:column;justify-content:center;background:var(--ink);color:white;border-radius:9px;padding:25px}
+.project-fact>span{font-size:11px;color:#fcaec2;text-transform:uppercase;letter-spacing:.08em}
+.project-fact strong{font-size:42px;line-height:1.25;letter-spacing:-.04em;margin:12px 0}
+.project-fact p{font-size:13px;color:#e0e5eb}.project-fact small{font-size:10px;color:#c1c9d2}
+.project-list-two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.interest-group{margin-bottom:32px}.interest-group .info-card{border-top:3px solid var(--red)}
+.interest-group .info-card p{font-size:14px;line-height:1.7}.interest-group h3{font-size:23px}
+.gaming-note{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:24px;background:white;border:1px solid var(--line);border-radius:12px}
+.gaming-note p{font-size:14px;max-width:65ch;margin:0;color:var(--muted)}.gaming-note>span{font-size:12px;white-space:nowrap;color:var(--red)}
+.context-note{padding:10px 14px;border-left:2px solid var(--line);font-size:12px!important;color:var(--muted)}
+.case-next{display:flex;gap:24px;flex-wrap:wrap;align-items:center}
+.resume-contact{font-size:12px;color:var(--muted);margin:12px 0 0;overflow-wrap:anywhere}.resume-contact a{text-underline-offset:3px}
+.contact-topics{display:grid;gap:9px;margin-top:12px}.contact-topics a{color:white;font-size:13px;text-decoration:none}.contact-topics a:hover{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:980px){.site-header nav{overflow:visible}.nav-list{min-width:0;flex-wrap:wrap}.nav-list a{padding:7px 11px}}
+@media(max-width:700px){.project-feature{grid-template-columns:1fr;padding:22px;gap:20px}.project-list-two{grid-template-columns:1fr}.project-fact{padding:20px}.project-fact strong{font-size:34px;margin:8px 0}.gaming-note{flex-direction:column;align-items:start;gap:12px}.section-nav{gap:10px 15px}.section-nav>span{width:100%}.interest-group{margin-bottom:26px}}
+@media print{.section-nav{display:none}.resume-contact{font-size:9pt;color:black}}
