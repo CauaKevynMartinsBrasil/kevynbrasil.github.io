@@ -586,3 +586,22 @@ h1,h2,h3,.text-link,.button{overflow-wrap:anywhere}
  .case-aside,.bergecco-case .case-aside{padding:18px}
  .contact-method{padding:16px 0}
 }
+
+/* Subtle navigation feedback without changing layout or touch target sizes. */
+@media screen{
+ .section-nav a,.nav-list a{position:relative;transition:transform .16s ease,color .16s ease,background-color .16s ease}
+ .section-nav a{display:inline-flex;align-items:center;transform-origin:center}
+ .section-nav a:focus-visible,.section-nav a:active{color:var(--red);border-color:var(--red)}
+ .nav-list a:active{background:#fff0f3;color:var(--red)}
+ main section[id]:target>h2{color:var(--red)}
+}
+@media screen and (prefers-reduced-motion:no-preference){
+ .section-nav a:focus-visible,.nav-list a:focus-visible{transform:scale(1.04)}
+ .section-nav a:active,.nav-list a:active{transform:scale(1.02)}
+ main section[id]>h2{transform-origin:left center;transition:transform .18s ease,color .18s ease}
+ main section[id]:target>h2{transform:scale(1.02)}
+}
+@media screen and (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+ .section-nav a:hover,.nav-list a:hover{transform:scale(1.04);z-index:1}
+ .section-nav a:active,.nav-list a:active{transform:scale(1.02)}
+}
