@@ -315,8 +315,9 @@ p{margin-bottom:18px}
 button.button{cursor:pointer}
 .case-next{grid-column:1/-1}
 @media(min-width:1100px){
- .case-layout>div{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:26px 32px}
- .case-layout section,.case-layout section+section{margin:0;padding:0;border:0}
+ .case-layout>div{display:block}
+ .case-layout section{margin:0;padding:0;border:0}
+ .case-layout section+section{margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
  .case-layout .financial-model{grid-column:1/-1;border-top:1px solid var(--line);padding-top:22px}
  .case-layout section p:last-child{margin-bottom:0}
 }
@@ -400,3 +401,16 @@ button.button{cursor:pointer}
 .event-concepts li strong{display:block;color:var(--ink);margin-bottom:5px}
 @media(min-width:1700px){.project-detail{width:calc(100% - 72px)}}
 @media(max-width:700px){.project-detail{width:calc(100% - 32px)}.bergecco-case>div{padding:16px}.event-concepts ul{grid-template-columns:1fr}.bergecco-case .my-contribution{padding:16px}.project-detail .info-card{padding:16px}}
+
+/* Shared readability, narrow-screen resilience, and consistent navigation. */
+.case-layout h2{margin-bottom:10px}
+.case-layout section>p:last-child{margin-bottom:0}
+.case-layout .case-next{margin-top:18px;padding-top:16px}
+.case-aside dl{grid-template-columns:110px minmax(0,1fr) 110px minmax(0,1fr)}
+.case-aside dd,.resume-item>*{min-width:0;overflow-wrap:anywhere}
+.case-layout>div,.contact-panel>div,.profile-intro{min-width:0}
+.text-link:hover{text-decoration:underline;text-underline-offset:4px}
+.project-card:focus-within{box-shadow:0 0 0 2px var(--red)}
+@media(max-width:800px){.case-aside dl{grid-template-columns:100px minmax(0,1fr)}.split-section{grid-template-columns:1fr;gap:12px}.case-aside{padding:20px}}
+@media(max-width:420px){.nav-list a{padding:9px 10px}.resume-block{padding:18px}.case-aside dl{grid-template-columns:1fr;gap:4px}.case-aside dd+dt{margin-top:10px}}
+@media print{.page-intro .eyebrow{font-size:20pt;font-weight:700;letter-spacing:0}.page-intro h1{font-size:12pt;margin-top:6px}.resume-block{break-inside:auto}.resume-item{break-inside:avoid}}
